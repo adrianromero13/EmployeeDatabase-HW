@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/adrianromero13/EmployeeDatabase-HW/issues"
   },
-  "homepage": "https://github.com/adrianromero13/EmployeeDatabase-HW#readme"
+  "homepage": "https://github.com/adrianromero13/EmployeeDatabase-HW#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^7.1.0",
+    "mysql": "^2.18.1"
+  }
 }

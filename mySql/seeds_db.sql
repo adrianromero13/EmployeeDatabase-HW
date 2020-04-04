@@ -26,10 +26,10 @@ INSERT INTO employee
     (first_name, last_name, role_id, manager_id)
 VALUES
     ('BigDog', 'Shlomo', 1, NULL),
-    ('CodeBreaker', 'Younan', 2, 1),
+    ('CodeBreaker', 'Younan', 2, NULL),
     ('Pimpin', 'Romero', 3, NULL),
-    ('Sensei', 'Manny', 4, 3),
+    ('Sensei', 'Manny', 4, 1),
     ('SlackDaddy', 'Armande', 5, NULL),
-    ('SportsAgent', 'Mesina', 6, 5),
-    ('NerdGand', 'Amanda', 7, NULL),
-    ('FantasyLeague', 'Musa', 8, 7);
+    ('SportsAgent', 'Mesina', 6, NULL),
+    ('NerdGang', 'Amanda', 7, 3),
+    ('FantasyLeague', 'Musa', 8, 2);
