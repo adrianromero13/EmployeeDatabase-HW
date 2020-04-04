@@ -81,10 +81,14 @@ function executeSearch() {
         }
         
 // create function for viewing employees
-// function viewEmployee() {
-    
-
-// }
+function viewEmployees() {
+    //run conection.query to display all employees 
+    connection.query("SELECT * FROM employee", function(err, res) {
+        console.table(res);
+        executeSearch();
+    });
+  
+}
 // // create funciton to view departments available
 // // let users view table of selected department
 
