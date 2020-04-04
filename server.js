@@ -148,22 +148,59 @@ function addEmployee() {
     })
 }
 
-// //create function to add department to the database
-// function addDepartment() {
+//create function to add department to the database
+function addDepartment() {
+    inquirer
+        .prompt([
+            {
+                type: 'input',
+                name: 'department',
+                message: "What is the department that you want to add?"
+            }
+        ]).then(function(res) {
+            // create connection.query to gather info
+            connection.query('INSERT INTO department (name) Values (?)',
+            [res.department],
+            function(err, res){
+                if (err) throw err;
+                console.log(`Department of ${[res.department]} was successfully created.`);
+                search();
+            })
+        })
 
-// }
+}
 
 // // create function to add role
-// function addRole() {
-//     // prompt user what the new role is
-//     // create then function to use input to create variable with the answer
-
-//     // prompt user to input salary for new role
-//     // create then function to use input as new salary
-
-//     // prompt user to input new id for the role
-//     // then function to create id and use in database
-// }
+function addRole() {
+    // prompt user what the new role is
+    inquirer.prompt([
+        {
+            type: "input",
+            name: "title",
+            message: "enter title:"
+        }, 
+        {
+            type: "number",
+            name: "salary",
+            message: "enter salary:"
+        }, 
+        {
+            type: "number",
+            name: "department_id",
+            message: "enter department ID:"
+        }
+    ])
+    // run a then function to return information returned to database
+    .then(function (res) {
+        connection.query("INSERT INTO role (title, salary, department_id) values (?, ?, ?)", 
+        [res.title, res.salary, res.department_id], 
+        function (err, res) {
+            if (err) throw err;
+            console.log(`${[res.title]} was successfully created!`);
+            search();
+        })
+    })
+}
 
 // // create function to remove employee
 // function removeEmployee() {
