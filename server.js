@@ -136,7 +136,7 @@ function addEmployee() {
         {
             type: 'number',
             name: 'managerId',
-            message: "What is the employees manager's ID?"
+            message: "What is the employees manager ID?"
         }
     ])
         // use user input to make push into table
@@ -147,7 +147,7 @@ function addEmployee() {
                 function (err, data) {
                     if (err) throw err;
                     console.log(`Employee ${[res.firstName]} ${[res.lastName]}, role ID ${[res.roleId]} was successfully added.
-                They will report to manager ID: ${[res.managerId]}.`);
+                They will operate as manager ID: ${[res.managerId]}.`);
                     search();
                 });
         });
