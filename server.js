@@ -222,11 +222,12 @@ function removeEmployee() {
         .then(function (answer) {
             let query = "DELETE FROM employee WHERE ?";
             let removeID = Number(answer.removeEmployee);
+            console.table(query);
 
             // create connection query to remove from database
             connection.query(query, { id: removeID }, function (err, res) {
                 if (err) throw (err);
-                console.log(`Employee number ${answer.removeEmployee} has been removed.`)
+                console.log(`Employee ${answer.removeEmployee} has been removed.`)
                 search();
             });
         });

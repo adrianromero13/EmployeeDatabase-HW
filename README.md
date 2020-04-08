@@ -37,7 +37,7 @@ _current version:_ **1.0.0**
 
 ## Technologies:
 
-The technologies used to create this application are as follows:
+The technologies used to create this terminal application are as follows:
 - MySql Workbench
 - JavaScript
 - Node.js
@@ -72,6 +72,7 @@ Examples show on the README.md were executed using GitBash app terminal.
 
 <!-- Left off right here -->
 
+![EmployeeTrackerDemo]({<iframe src="https://drive.google.com/file/d/15sHiY3KFjA_s-2JQ6Etel3U4tGmWCDq2/preview" width="640" height="480"></iframe>} "EmployeeTracker Demo")
 
 
 [Adrian'sGithub](https://github.com/adrianromero13)
