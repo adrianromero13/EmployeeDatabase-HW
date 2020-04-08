@@ -69,13 +69,10 @@ Examples show on the README.md were executed using GitBash app terminal.
 
 4. The function of choice will then run. The _View_ options will present a table with the stated information. The _Add, Creat,_ and _Remove_ functions will prompt some necessary information needed to complete the function. And the _Exit_ function will terminate the application.
 
-
-<!-- Left off right here -->
-[![Alternate Text]({image-url})]({video-url} "Link Title")
-
-
-
+### Demo of Application
 [![EmployeeTrackerDemo](./assets/DemoImage.png)](./assets/AppDemoPic.gif "EmployeeTracker Demo")
+
+Take a look at this gif to see how the Employee Tracker database application works.
 
 
 [Adrian'sGithub](https://github.com/adrianromero13)
