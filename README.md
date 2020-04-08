@@ -57,14 +57,14 @@ Examples show on the README.md were executed using GitBash app terminal.
 
 3. The app will prompt you a question _"What would you like to do?"_ followed by a list of commands
     This is the commands you will be able to choose from:
-   -   * View all the employees
-   -   * View all the managers
-   -   * Add an employee
-   -   * Add a new department
-   -   * Create a Role
-   -   * Remove an employee
-   -   * Remove a department
-   -   * Exit
+      * View all the employees
+      * View all the managers
+      * Add an employee
+      * Add a new department
+      * Create a Role
+      * Remove an employee
+      * Remove a department
+      * Exit
     Navigate through these options using the arrow keys on your keyboard and activate them by pressing enter.
 
 4. The function of choice will then run. The _View_ options will present a table with the stated information. The _Add, Creat,_ and _Remove_ functions will prompt some necessary information needed to complete the function. And the _Exit_ function will terminate the application.
@@ -73,6 +73,9 @@ Examples show on the README.md were executed using GitBash app terminal.
 [![EmployeeTrackerDemo](./assets/DemoImage.png)](./assets/AppDemoPic.gif "EmployeeTracker Demo")
 
 Take a look at this gif to see how the Employee Tracker database application works.
+
+... _video may be small...please zoom in or check this mp4 version_ ...
+![EmployeeTrackermp4](.assets/mp4VersionOfDemo.mp4 "mp4 Version of Demo")
 
 
 [Adrian'sGithub](https://github.com/adrianromero13)
