@@ -71,8 +71,11 @@ Examples show on the README.md were executed using GitBash app terminal.
 
 
 <!-- Left off right here -->
+[![Alternate Text]({image-url})]({video-url} "Link Title")
 
-![EmployeeTrackerDemo](./assets/EmployeeTrackerDemo.mp4 "EmployeeTracker Demo")
+
+
+[![EmployeeTrackerDemo](./assets/DemoImage.png)](./assets/AppDemoPic.gif "EmployeeTracker Demo")
 
 
 [Adrian'sGithub](https://github.com/adrianromero13)

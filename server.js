@@ -70,9 +70,6 @@ function search() {
                     removeEmployee();
                     break;
 
-                // case "Update Employee Role":
-                //     updateEmployee();
-                //     break;
                 case "Remove Department":
                     removeDepartment();
                     break;
@@ -244,13 +241,7 @@ function removeDepartment() {
         .then(function (answer) {
             let query = "DELETE FROM department WHERE ?";
             let rmDepID = Number(answer.removeDepartment);
-            // create the connection.query to remove department based on id
-
-            // this is broken trying to reset id's 
-            // connection.query("ALTER TABLE department AUTO_INCREMENT ?", { id: rmDepID}, function (err, res){
-            //     if (err) throw (err);
-            //     console.log("Department ID's have been reset.");
-            // })
+         
             connection.query(query, { id: rmDepID }, function (err, res) {
                 if (err) throw (err);
                 console.log(`Department number ${rmDepID} has been removed.`);
@@ -259,19 +250,3 @@ function removeDepartment() {
 
         })
 }
-
-// // function to update existing employees
-// function updateEmployee() {
-//     // use inquirer to prompt user to enter employee id being updated
-//     // then function to create id variable
-
-//     // inquirer promptto ask about role id
-//     // then function to update role id
-// }
-
-
-// // create function to update an employee's manager
-// function employeeManager() {
-//     // inquirer prompt to ask what employee would the user like to update the manager
-//     // then function to use answer and change info in mysql table
-// }
