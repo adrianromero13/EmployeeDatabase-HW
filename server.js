@@ -18,8 +18,8 @@ connection.connect(function (err) {
 });
 
 // write function to run search based on parameters input
-// use inquirer to prompt in console for user to make choice
 function search() {
+    // use inquirer to prompt in console for user to make choice
     inquirer
         .prompt({
             type: 'list',
@@ -33,8 +33,6 @@ function search() {
                 "Add Role",
                 "Remove Employee",
                 "Remove Department",
-                // "Update Employee Role",
-                // "Update Employee Manager",
                 "exit"
             ]
         })
@@ -241,8 +239,14 @@ function removeDepartment() {
         .then(function (answer) {
             let query = "DELETE FROM department WHERE ?";
             let rmDepID = Number(answer.removeDepartment);
-         
-            connection.query(query, { id: rmDepID }, function (err, res) {
+            
+            // this is broken trying to reset id's 
+            // connection.query("ALTER TABLE department AUTO_INCREMENT ?", { id: rmDepID}, function (err, res){
+                //     if (err) throw (err);
+                //     console.log("Department ID's have been reset.");
+                // })
+            // create the connection.query to remove department based on id
+                connection.query(query, { id: rmDepID }, function (err, res) {
                 if (err) throw (err);
                 console.log(`Department number ${rmDepID} has been removed.`);
                 search();
