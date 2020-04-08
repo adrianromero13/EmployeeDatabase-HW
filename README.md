@@ -75,7 +75,7 @@ Examples show on the README.md were executed using GitBash app terminal.
 Take a look at this gif to see how the Employee Tracker database application works.
 
 ... _video may be small...please zoom in or check this mp4 version_ ...
-![EmployeeTrackermp4](.assets/mp4VersionOfDemo.mp4 "mp4 Version of Demo")
+![EmployeeTrackermp4](https://drive.google.com/file/d/15M-G4gBlqd59HKUeG0npeK4PsMZPLo-z/view "mp4 Version of Demo")
 
 
 [Adrian'sGithub](https://github.com/adrianromero13)
