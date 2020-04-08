@@ -72,7 +72,7 @@ Examples show on the README.md were executed using GitBash app terminal.
 
 <!-- Left off right here -->
 
-![EmployeeTrackerDemo]({<iframe src="https://drive.google.com/file/d/15sHiY3KFjA_s-2JQ6Etel3U4tGmWCDq2/preview" width="640" height="480"></iframe>} "EmployeeTracker Demo")
+![EmployeeTrackerDemo](./assets/EmployeeTrackerDemo.mp4 "EmployeeTracker Demo")
 
 
 [Adrian'sGithub](https://github.com/adrianromero13)
